@@ -58,7 +58,7 @@ public class DownloadMain {
         return config;
     }
 
-    @ExtensionAPI.ExtensionInit("download/1.0.0")
+    @ExtensionAPI.ExtensionInit("download/1.0.1")
     public static void initDownload(ExtensionAPI api) {
         if(new File("data.json").exists()) {
             Scanner scanner = null;
@@ -79,7 +79,7 @@ public class DownloadMain {
         initialized = true;
     }
 
-    @ExtensionAPI.ExtensionUnload("download/1.0.0")
+    @ExtensionAPI.ExtensionUnload("download/1.0.1")
     public static void unloadDownload(ExtensionAPI api) {
         writeJSON();
     }
